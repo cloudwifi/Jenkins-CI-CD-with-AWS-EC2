@@ -11,7 +11,7 @@ pipeline {
 
         stage("Building and testing the Docker image") {
             steps {
-                sh "docker build -t naveenjangid22/my-node-app . "
+                sh "docker build -t naveenjangid22/my-app . "
                 echo "Successfully build the image"
             }
         }
@@ -35,7 +35,7 @@ pipeline {
                     echo "Login to DockerHub successful"
 
                     // Push the Docker image to DockerHub
-                    sh "docker push naveenjangid22/my-node-app"
+                    sh "docker push naveenjangid22/my-app"
                     echo "Successfully pushed the image"
                 }
             }
