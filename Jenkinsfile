@@ -9,7 +9,7 @@ pipeline {
             steps {
 
                 // Clone the Git repository from the specified URL and branch
-                git url: "https://github.com/bishalcpgn/Jenkins_CI-CD.git", branch: "main"
+                git url: "https://github.com/cloudwifi/Jenkins-CI-CD-with-AWS-EC2.git", branch: "main"
                 
                 // Print a message in the console
                 echo "Successfully cloned the code"
@@ -21,7 +21,7 @@ pipeline {
 
             steps {
                 // Build the Docker image 
-                sh "docker build -t bishal5438/my-node-app . "
+                sh "docker build -t naveenjangid22/my-node-app . "
 
                 // Print a message in the console
                 echo "Successfully build the image"
@@ -50,7 +50,7 @@ pipeline {
                     echo "Login to dockerhub sucess"
 
                     // Push the Docker image to DockerHub
-                    sh "docker push bishal5438/my-node-app"
+                    sh "docker push naveenjangid22/my-node-app"
 
                     // Print a message in the console
                     echo "Succesfully pushed the image"
