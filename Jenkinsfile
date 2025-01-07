@@ -36,7 +36,7 @@ pipeline {
                 // Extract credentials for DockerHub stored in Jenkins
                 withCredentials(
                     [usernamePassword(
-                        credentialsId: "docker_credentials", // Jenkins credentials ID
+                        credentialsId: "dockerhub_cred", // Jenkins credentials ID
                         usernameVariable: "docker_hub_username",
                         passwordVariable: "docker_hub_passsword", 
                     )]
