@@ -6,7 +6,7 @@ services:
   # Name of the service (container) running your Node.js application.
   my-node-app:
     # Specify the Docker image to use for this service. 
-    image: bishal5438/my-node-app
+    image: naveenjangid22/my-node-app
     
     # Map port 4000 on the host to port 4000 in the container.
     # This allows you to access the app from your host's port 4000.
