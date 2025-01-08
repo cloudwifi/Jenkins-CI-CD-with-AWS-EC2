@@ -43,7 +43,7 @@ pipeline {
 
         stage("Deploying the application using Docker Compose") {
             steps {
-                sh "docker compose up -d"
+                sh "docker-compose up -d"
             }
         }
     }
